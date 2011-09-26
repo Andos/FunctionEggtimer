@@ -1,0 +1,294 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "..\..\Inc\ccx.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x10001L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Anders Riggelsen\0"
+            VALUE "FileDescription", "Function Eggtimer\0"
+            VALUE "FileVersion", "2.00\0"
+            VALUE "InternalName", "FunctionEggtimer\0"
+            VALUE "LegalCopyright", "Copyright © 2006 Anders Riggelsen\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FunctionEggtimer.mfx\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "00000001\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+KPX_MAGICNUMBER RCDATA MOVEABLE PURE 
+BEGIN
+    0x2516, 0x5908
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_ICON$(EDITOR)       BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#else
+EXO_ICON                BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_IMAGE$(EDITOR)      BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#else
+EXO_IMAGE               BITMAP  MOVEABLE PURE   "EXTICON.BMP"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_CONDITIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_CONDITIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "On function",                 CID_conOnFunction
+        MENUITEM "On any function",             CID_conAnyFunction
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_ACTIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_ACTIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Queue function",              AID_acDelayFunction
+        POPUP "Change settings for last queued function"
+        BEGIN
+            MENUITEM "Repeat function X times",     AID_acSetRepeat
+            MENUITEM "Set private data value",      AID_acSetPrivateData
+            MENUITEM "Continuous trigger untill canceled", 
+                                                    AID_acUseSuccessFlag
+        END
+        MENUITEM "Call immediate function",     AID_acImmediateFunction
+        MENUITEM SEPARATOR
+        MENUITEM "Stop current function",       AID_acFunctionSuccessfull
+        MENUITEM "Remove function from queue by name", AID_actCancelFunction
+        MENUITEM "Clear function queue",        AID_acStopAll
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_EXPRESSIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_EXPRESSIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "Current function"
+        BEGIN
+            MENUITEM "Get function name",           EID_extLastFunctionName
+            MENUITEM "Get private data",            EID_extPrivateData
+            MENUITEM "Get number of repeats left",  EID_extRemainingRepeats
+        END
+        MENUITEM "Get number of functions in queue", 
+                                                EID_expGetFunctionsInQueue
+    END
+END
+#endif
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""..\\..\\Inc\\ccx.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    KPX_MARK                "MF2"
+    KPX_NAME                "Function Eggtimer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDST_OBJNAME            "Function Eggtimer"
+    IDST_AUTHOR             "Anders Riggelsen"
+    IDST_COPYRIGHT          "Copyright © 2010 Anders Riggelsen"
+    IDST_COMMENT            "Function Eggtimer makes timed events much easier to make and control. For example you can call a function that first will be triggered after a delay you decide. Also allows for repeating functions and ever-repeating functions."
+    IDST_HTTP               "http://www.andersriggelsen.dk"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    CID_conOnFunction       "%o On function %0"
+    CP0ID_conOnFunction     "Function name"
+    CID_conAnyFunction      "%o On any function"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_acDelayFunction     "Call %0 after %1 event loops"
+    AP0ID_acDelayFunction   "Enter function name"
+    AP1ID_acDelayFunction   "Event loops"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_actCancelFunction   "Cancel function %0"
+    AP0ID_actCancelFunction "Function to cancel"
+    AID_acSetRepeat         "Repeat function %0 times"
+    AP0ID_acSetRepeat       "Enter amount of times for the function to repeat (-1 to repeat forever)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_expGetFunctionsInQueue "QueueSize("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_extLastFunctionName "LastFunction$("
+    EID_extPrivateData      "PrivateData("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_acSetPrivateData    "Set private data to = %0"
+    AP0ID_acSetPrivateData  "Enter a value"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_acUseSuccessFlag    "Continuous trigger until canceled"
+    AID_acFunctionSuccessfull "Cancel current function"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EID_extRemainingRepeats "RemainingRepeats("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AID_acImmediateFunction "Call %0 immedeatly with optional repeat delay of %1"
+    AP0ID_acImmediateFunction "Enter function name"
+    AP1ID_acImmediateFunction 
+                            "Enter delay (just leave 0 if you don't plan to use the 'repeat' action for this function)"
+    AID_acStopAll           "Clear function queue"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

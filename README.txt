@@ -1,0 +1,1 @@
+Function Eggtimer makes timed events much easier to make and control. For example you can call a function that first will be triggered after a delay you decide (like Javascript timers). Also features repeating functions and ever-repeating functions.
